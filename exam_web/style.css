@@ -1,0 +1,105 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff5f0;
+}
+
+header {
+    background: #d2691e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background: #8b4513;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background: #d2691e;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover {
+    background: #a0522d;
+}
+
+#cart, #historyBox {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8b4513;
+    color: white;
+}
+
+/* MODAL */
+#checkoutModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+}
